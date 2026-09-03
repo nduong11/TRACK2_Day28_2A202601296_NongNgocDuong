@@ -1,0 +1,10 @@
+skipped ip03-delta-history.json: LakehouseUnavailable: no Delta table at .lab28/delta/feedback
+/home/laptop-nduong/Documents/VinUni/TRACK2_Day28_2A202601296_NongNgocDuong/.venv/lib/python3.12/site-packages/lab28_platform/vector_store.py:83: UserWarning: The model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 now uses mean pooling instead of CLS embedding. In order to preserve the previous behaviour, consider either pinning fastembed version to 0.5.1 or using `add_custom_model` functionality.
+  self._dense = TextEmbedding(model_name=self._settings.embedding_model, **kwargs)
+wrote evidence/ip05-qdrant-search.json
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 16.64it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 16.57it/s]
+wrote evidence/ip06-mlflow-release.json
+wrote evidence/ip07-vllm-identity.json
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 17.11it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 17.05it/s]
+wrote evidence/integration-report.json
+6 evidence file(s) must come from outside this process

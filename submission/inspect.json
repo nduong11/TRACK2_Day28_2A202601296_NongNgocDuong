@@ -1,0 +1,52 @@
+{
+  "kafka": {
+    "brokers": 1,
+    "topics": [
+      "data.processed",
+      "data.raw",
+      "data.raw.dlq",
+      "model.events"
+    ]
+  },
+  "spark-delta": {
+    "reachable": false,
+    "tables": {
+      "feedback": {
+        "uri": ".lab28/delta/feedback",
+        "error": "no Delta table at .lab28/delta/feedback"
+      },
+      "documents": {
+        "uri": ".lab28/delta/documents",
+        "error": "no Delta table at .lab28/delta/documents"
+      }
+    }
+  },
+  "feast": {
+    "reachable": true,
+    "status_code": 200,
+    "healthy": true,
+    "detail": "ok"
+  },
+  "qdrant": {
+    "reachable": true,
+    "collection_exists": true,
+    "points": 13,
+    "detail": "ok"
+  },
+  "mlflow": {
+    "reachable": true,
+    "has_champion": true,
+    "version": "1",
+    "run_id": "d5a5321fb97847c6aa9a32ee6ed96504",
+    "detail": "lab28-rag-release v1 is champion"
+  },
+  "vllm": {
+    "reachable": false,
+    "version": null,
+    "served_models": [],
+    "vllm_metric_names": [],
+    "vllm_metric_count": 0,
+    "is_real_vllm": false,
+    "detail": "unreachable: ConnectError"
+  }
+}

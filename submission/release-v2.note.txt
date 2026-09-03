@@ -1,0 +1,15 @@
+2026/09/03 17:06:41 INFO mlflow.utils.uv_utils: Detected uv project: found uv.lock and pyproject.toml in /home/laptop-nduong/Documents/VinUni/TRACK2_Day28_2A202601296_NongNgocDuong
+2026/09/03 17:06:42 WARNING mlflow.pyfunc: Passing a Python object as `python_model` causes it to be serialized using CloudPickle, it requires exercising caution as Python object serialization mechanisms may execute arbitrary code during deserialization.Consider using a file path (str or Path) instead. See https://mlflow.org/docs/latest/ml/model/models-from-code/ for details.
+2026/09/03 17:06:42 INFO mlflow.models.signature: Running the predict function to generate output based on input example
+2026/09/03 17:06:42 INFO mlflow.utils.uv_utils: Detected uv project: found uv.lock and pyproject.toml in /home/laptop-nduong/Documents/VinUni/TRACK2_Day28_2A202601296_NongNgocDuong
+2026/09/03 17:06:42 INFO mlflow.utils.environment: Detected uv project at /home/laptop-nduong/Documents/VinUni/TRACK2_Day28_2A202601296_NongNgocDuong. Attempting to export requirements via 'uv export'.
+2026/09/03 17:06:42 WARNING mlflow.utils.uv_utils: uv is not available or version is below minimum required. Falling back to pip-based inference.
+2026/09/03 17:06:42 WARNING mlflow.utils.environment: uv export failed or returned no requirements. Falling back to package capture based inference.
+2026/09/03 17:06:44 INFO mlflow.utils.uv_utils: Detected uv project: found uv.lock and pyproject.toml in /home/laptop-nduong/Documents/VinUni/TRACK2_Day28_2A202601296_NongNgocDuong
+2026/09/03 17:06:44 INFO mlflow.utils.uv_utils: Copied uv.lock to model artifacts
+2026/09/03 17:06:44 INFO mlflow.utils.uv_utils: Copied pyproject.toml to model artifacts
+Registered model 'lab28-rag-release' already exists. Creating a new version of this model...
+2026/09/03 17:06:44 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: lab28-rag-release, version 2
+Created version '2' of model 'lab28-rag-release'.
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 19.47it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 19.40it/s]
+registered lab28-rag-release v2 as champion

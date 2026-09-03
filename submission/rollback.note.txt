@@ -1,0 +1,2 @@
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 19.37it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 19.29it/s]
+champion moved from v2 to v1

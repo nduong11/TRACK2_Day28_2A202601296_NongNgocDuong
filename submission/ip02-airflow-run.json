@@ -1,0 +1,5 @@
+{
+  "status": "UNVERIFIED",
+  "reason": "Airflow and Spark Connect are behind compose profile 'full'. Docker Desktop VM has ~4 GiB RAM; full profile was not started.",
+  "expected": "DAG lab28_ingestion_pipeline run id, task states, asset event lab28://delta/feedback"
+}

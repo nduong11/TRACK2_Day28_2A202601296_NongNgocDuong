@@ -1,0 +1,27 @@
+{
+  "title": "Lab 28 Platform Overview",
+  "uid": "lab28-platform",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Request rate",
+      "type": "timeseries"
+    },
+    {
+      "id": 2,
+      "title": "Errors",
+      "type": "timeseries"
+    },
+    {
+      "id": 3,
+      "title": "Request duration",
+      "type": "timeseries"
+    },
+    {
+      "id": 4,
+      "title": "Pipeline saturation / lag",
+      "type": "timeseries"
+    }
+  ],
+  "grafana_url": "http://localhost:3000"
+}

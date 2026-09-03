@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-09-03T17:06:40+07:00",
+  "scenario": "Feast down then recover (optional dependency)",
+  "inject": "docker compose --env-file ports.template stop feast",
+  "before_or_during_failure": {
+    "file": "submission/ready-feast-down.json",
+    "gateway_ready_status": "degraded",
+    "feast_ready": false,
+    "qdrant_points": 13,
+    "mlflow_champion": "lab28-rag-release v1",
+    "trace_id": "6e5f579c6e578b0f453124f5ac505576"
+  },
+  "recovery": "docker compose --env-file ports.template start feast",
+  "after_recovery": {
+    "file": "submission/ready-feast-up.json",
+    "gateway_ready_status": "degraded",
+    "feast_ready": true,
+    "qdrant_points": 13,
+    "mlflow_champion": "lab28-rag-release v1",
+    "trace_id": "a5491b8d48f0bb5cfe8be03f32b07784",
+    "degraded_reason": "vLLM still unreachable — expected without GPU; not caused by Feast"
+  },
+  "no_data_loss": {
+    "qdrant_points_unchanged": 13,
+    "kafka_topics_still_present": true,
+    "mlflow_champion_unchanged": "v1",
+    "note": "Did not run docker compose down -v or lab28 reset --yes"
+  }
+}

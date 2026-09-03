@@ -1,0 +1,2 @@
+Downloading artifacts:   0%|          | 0/1 [00:00<?, ?it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 13.00it/s]Downloading artifacts: 100%|██████████| 1/1 [00:00<00:00, 12.93it/s]
+status: not_ready

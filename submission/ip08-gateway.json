@@ -1,0 +1,55 @@
+{
+  "healthz": {
+    "url": "http://localhost:8080/healthz",
+    "status": 200,
+    "headers": {
+      "x-request-id": "226d8935-e193-9db1-a841-5cbe75b67097",
+      "content-length": "3",
+      "content-type": "text/plain",
+      "date": "Thu, 03 Sep 2026 10:05:13 GMT",
+      "server": "envoy",
+      "connection": "close"
+    },
+    "body": "ok\n"
+  },
+  "health_via_gateway": {
+    "url": "http://localhost:8080/health",
+    "status": 200,
+    "headers": {
+      "date": "Thu, 03 Sep 2026 10:05:13 GMT",
+      "server": "envoy",
+      "content-length": "40",
+      "content-type": "application/json",
+      "x-lab28-trace-id": "00000000000000000000000000000000",
+      "x-envoy-upstream-service-time": "6",
+      "x-request-id": "51a7beb1-9494-9ef6-847c-88b0449f3241",
+      "connection": "close",
+      "x-envoy-decorator-operation": "lab28.gateway.request"
+    },
+    "body": "{\"status\":\"alive\",\"service\":\"lab28-api\"}"
+  },
+  "rate_limited": {
+    "url": "http://localhost:8080/healthz",
+    "status": 429,
+    "headers": {
+      "x-lab28-rate-limited": "true",
+      "content-length": "18",
+      "content-type": "text/plain",
+      "date": "Thu, 03 Sep 2026 10:06:37 GMT",
+      "server": "envoy",
+      "connection": "close"
+    },
+    "body": "local_rate_limited"
+  },
+  "rate_limit_burst": {
+    "requests": 40,
+    "status_200": 12,
+    "status_429": 28
+  },
+  "seed_feedback_429": {
+    "count": 4,
+    "status_code": 429,
+    "body": "local_rate_limited",
+    "note": "lab28 seed --via-gateway hit Envoy local rate limit (10 req/s) on POST /api/v1/feedback"
+  }
+}

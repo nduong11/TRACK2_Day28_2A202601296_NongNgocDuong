@@ -1,0 +1,18 @@
+{
+  "reachable": true,
+  "has_champion": true,
+  "model_name": "lab28-rag-release",
+  "champion_after_rollback": {
+    "version": "1",
+    "run_id": "d5a5321fb97847c6aa9a32ee6ed96504",
+    "alias": "champion",
+    "prompt_version": "v1"
+  },
+  "promoted_then_rolled_back": {
+    "version": "2",
+    "run_id": "673c57f2ffb54c80bab3fd47f7e03c58",
+    "prompt_version": "v2"
+  },
+  "mlflow_ui": "http://localhost:5000/#/experiments/1/runs/d5a5321fb97847c6aa9a32ee6ed96504",
+  "detail": "lab28-rag-release v1 is champion after lab28 rollback"
+}

@@ -1,0 +1,13 @@
+# Fast suite — 2026-09-03T16:24:25+07:00
+
+pytest starter-tests tests -q
+87 passed in 4.64s
+
+ruff check .
+All checks passed!
+
+scripts/verify_matrix.py
+OK    245 checks passed: contracts/integration-matrix.yaml matches the repository
+
+scripts/check_portability.py
+OK    supported workflow is host-path and shell independent

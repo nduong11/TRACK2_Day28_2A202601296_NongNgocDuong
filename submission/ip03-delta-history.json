@@ -1,0 +1,5 @@
+{
+  "status": "UNVERIFIED",
+  "reason": "No Spark Connect / Airflow MERGE. lab28 evidence: LakehouseUnavailable, no Delta table at .lab28/delta/feedback",
+  "idempotency_unit_tests": "tests/test_delta_merge_idempotency.py passed in fast suite"
+}

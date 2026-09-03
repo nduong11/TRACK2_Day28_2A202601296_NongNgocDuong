@@ -1,0 +1,11 @@
+{
+  "name": "lab28-rag-release",
+  "version": "1",
+  "run_id": "d5a5321fb97847c6aa9a32ee6ed96504",
+  "alias": "champion",
+  "prompt_version": "v1",
+  "vllm_model_id": "Qwen/Qwen3-1.7B",
+  "embedding_model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2@faf4aa4225822f3bc6376869cb1164e8e3feedd0",
+  "delta_version": null,
+  "top_k": 3
+}
